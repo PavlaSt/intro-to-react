@@ -11,7 +11,10 @@ import '../../index.css';
  *
  *  */
 
-export class App extends React.Component {
+import {Input} from './Input';
+
+
+ export class App extends React.Component {
   render() {
     return (
       <div className="App">
@@ -22,14 +25,17 @@ export class App extends React.Component {
         <div>
           <div>
             <div className="logo"></div>
+
             <div className="input">
               <img className="search-icon" src={searchLogo} alt="Search Logo" />
               <input id="search-text" value="abc" />
             </div>
+
             <div className="buttons">
               <button id="search-button">Google Search</button>
               <button>I&apos;m Feeling Lucky</button>
             </div>
+
           </div>
         </div>
         <div>
